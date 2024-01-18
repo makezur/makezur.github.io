@@ -44,19 +44,138 @@
               </td>
             </tr>
           </tbody></table>
-          <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-                <p>
-                  I'm interested in computer vision, machine learning, optimization, and image processing. Most of my research is about inferring the physical world (shape, motion, color, light, etc) from images. Representative papers are <span class="highlight">highlighted</span>.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> -->
 
-            
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <h2>Research</h2>
+              <!-- <p>
+                I'm interested in computer vision, machine learning, optimization, and image processing.
+                Much of my research is about inferring the physical world (shape, motion, color, light, etc) from images.
+                Representative papers are <span class="highlight">highlighted</span>.
+              </p> -->
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="sp_stop()" onmouseover="sp_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle;">
+              <div class="paper-thumbnail">
+                <div class="paper-video" id='sp_image'>
+                  <video  width=100% height=auto% muted autoplay loop>
+                  <source src="images/superprimtive/cut_teaser_faster.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+                </div>
+                <img src='images/superprimtive/sp_teaser_static_resize.png' width=100%>
+              </div>
+              <script type="text/javascript">
+                function sp_start() {
+                  document.getElementById('sp_image').style.opacity = "1";
+                }
+
+                function sp_stop() {
+                  document.getElementById('sp_image').style.opacity = "0";
+                }
+                sp_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <div class="paper-info">
+              <a href="https://makezur.github.io/SuperPrimitive" class='papertitle'>SuperPrimitive: Scene Reconstruction at a Primitive Level</papertitle>
+              </a>
+              <br>
+              <text><b>Kirill Mazur</b>, Gwangbin Bae, Andrew J. Davison</text>
+              <br>
+              <text><em>arxiv</em>, 2024</text>
+              <br>
+              <text>
+                <a href="https://makezur.github.io/SuperPrimitive" target="_blank">project page</a> /
+                <a href="https://arxiv.org/abs/2312.05889" target="_blank">arxiv</a> /
+                <a href="WIP" target="_blank">video</a>
+              </text>
+            </td>
+           </div>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle;">
+              <div class="paper-thumbnail">
+                <img src='images/feature_fusion/feature2022mazur.png' width=100% height="auto">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <div class="paper-info">
+              <a href="https://makezur.github.io/FeatureRealisticFusion/" class='papertitle'>Feature-Realistic Neural Fusion for Real-Time, Open Set Scene Understanding
+              </a>
+              <br>
+              <text><b>Kirill Mazur</b>, Edgar Sucar, Andrew J. Davison</text>
+              <br>
+              <text><em>International Conference on Robotics and Automation (ICRA)</em> 2023</text>
+              <br>
+              <text>
+                <a href="https://makezur.github.io/FeatureRealisticFusion/" target="_blank">project page</a> /
+                <a href="https://arxiv.org/abs/2210.03043" target="_blank">arxiv</a> /
+                <a href="https://youtu.be/ysaohKI_Pf0" target="_blank">video</a>
+              </text>
+            </td>
+           </div>
+          </tr>
+
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle;">
+              <div class="paper-thumbnail">
+                <img src='images/point_based_clothing/teaser.png' width=100%>
+              </div>
+            </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <div class="paper-info">
+              <a href="https://www.ilia.ai/research/point-based-clothing/" class='papertitle'>Point-Based Modeling of Human Clothing
+              </a>
+              <br>
+              <text>Ilya Zakharkin, <b>Kirill Mazur</b>, Victor Lempitsky</text>
+              <br>
+              <text><em>International Conference on Computer Vision (ICCV)</em> 2021</text>
+              <br>
+              <text>
+                <a href="https://www.ilia.ai/research/point-based-clothing/" target="_blank">project page</a> /
+                <a href="https://github.com/SamsungLabs/point_based_clothing" target="_blank">code</a> /
+                <a href="https://arxiv.org/abs/2104.08230" target="_blank">arxiv</a> /
+                <a href="https://www.youtube.com/watch?v=kFrAu415kDU" target="_blank">video</a>
+              </text>
+            </td>
+          </div>
+          </tr>
+
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle;">
+              <div class="paper-thumbnail">
+                <img src='images/cloud_transformers/cloud_teaser.png' width="100%">
+              </div>
+            </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <div class="paper-info">
+              <a href="https://makezur.github.io/CloudTransformers/" class='papertitle'>Cloud Transformers: A Universal Approach To Point Cloud Processing Tasks
+            </a>
+            <br>
+            <text><b>Kirill Mazur</b>, Victor Lempitsky</text>
+            <br>
+            <text><em>International Conference on Computer Vision (ICCV)</em> 2021</text>
+            <br>
+            <text>
+              <a href="https://makezur.github.io/CloudTransformers/" target="_blank">project page</a> /
+              <a href="https://github.com/SamsungLabs/cloud_transformers" target="_blank">code</a> /
+              <a href="https://arxiv.org/abs/2007.11679" target="_blank">arxiv</a> /
+              <a href="https://www.youtube.com/watch?v=lYTzLhy-ybw" target="_blank">video</a>
+            </text>
+          </td>
+          </div>
+        </tr>
+
           </tbody></table>
           <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>

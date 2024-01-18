@@ -96,10 +96,46 @@ h2 {
   font-size: 22px;
 }
 
+/* papertitle {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+} */
+
 .papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
+  text-decoration: none; /* Removes underline */
+  color: rgb(15, 103, 228); /* Set your desired color */
+}
+
+.papertitle:hover {
+  text-decoration: underline; /* Adds underline on hover */
+  color: rgb(15, 103, 228); /* Change color on hover if needed */
+}
+
+
+.paper-thumbnail {
+  width: 240px;
+  height: auto;
+  position: relative;
+}
+
+.paper-video {
+  width: 240px;
+  height: auto;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+.paper-info {
+  /* text-align: center; */
+  flex-direction: column;
+  justify-content: center;
+  height: 80%; /* Make the container take up the full height of its parent */
 }
 
 .name {
@@ -115,6 +151,7 @@ h2 {
   position: relative;
 }
 
+
 .two {
   width: 160px;
   height: 160px;
@@ -123,6 +160,7 @@ h2 {
   -moz-transition: opacity .2s ease-in-out;
   -webkit-transition: opacity .2s ease-in-out;
 }
+
 
 .fade {
   transition: opacity .2s ease-in-out;
