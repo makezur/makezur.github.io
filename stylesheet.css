@@ -96,11 +96,6 @@ h2 {
   font-size: 22px;
 }
 
-/* papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-} */
 
 .papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
@@ -132,10 +127,26 @@ h2 {
 }
 
 .paper-info {
-  /* text-align: center; */
   flex-direction: column;
   justify-content: center;
-  height: 80%; /* Make the container take up the full height of its parent */
+  height: 80%; 
+}
+
+
+.paper-thumbnail video,
+.paper-thumbnail .paper-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.video-rim {
+  border-radius: 2px;
+  border: 3px solid rgba(235, 132, 201, 0.95);
+  background-color: #222;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.35);
+  overflow: hidden;
 }
 
 .name {
